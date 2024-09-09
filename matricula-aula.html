@@ -25,7 +25,7 @@
     </header>
     <main id="container">
         <h2>Cadastro</h2>
-        <form action="" class="form-control" method="post">
+        <form action="" class="form-control" method="post" enctype="multipart/form-data">
             <div id="image-user">
                 <img src="css/user.png" alt="" id="previewImage">
                 <label for="uploadImage" id="text-upload-image">
@@ -52,7 +52,7 @@
                 <label for="">
                     Telefone
                 </label>
-                <input type="tel" class="form-control" id="inputEmail" placeholder="Insera seu Telefone ">
+                <input type="tel" class="form-control" id="inputPhone" placeholder="Insera seu Telefone ">
             </div>
             <div>
                 <label for="inputDate">
@@ -70,7 +70,7 @@
             </div>
 
             <div class="d-grid gap-2 col-3 mx-auto">
-                <button type="submit" id="button" class="btn btn-primary">Matricular</button>
+                <button type="button" id="button" class="btn btn-primary" onclick="saveAluno()">Matricular</button>
             </div>
 
         </form>
