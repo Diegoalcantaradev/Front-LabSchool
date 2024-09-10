@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="js/main.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -41,19 +43,13 @@
                 <label for="">
                     ID
                 </label>
-                <input type="text" class="form-control" id="inputID">
+                <input type="text" class="form-control" id="inputID" readonly>
             </div>
             <div>
                 <label for="">
                     Nome
                 </label>
-                <input type="text" class="form-control" id="inputPrimeiroNome" placeholder="Insera seu nome">
-            </div>
-            <div>
-                <label for="">
-                    Sobrenome
-                </label>
-                <input type="text" class="form-control" id="inputSobrenome" placeholder="Insera seu sobrenome">
+                <input type="text" class="form-control" id="inputNome" placeholder="Insera seu nome">
             </div>
             <div>
                 <label for="">
@@ -65,7 +61,7 @@
                 <label for="">
                     Telefone
                 </label>
-                <input type="tel" class="form-control" id="inputEmail" placeholder="Insira o seu Telefone">
+                <input type="tel" class="form-control" id="inputPhone" placeholder="Insira o seu Telefone">
             </div>
             <div>
                 <label for="inputDate">
@@ -86,6 +82,9 @@
             <a href="https://github.com/Diegoalcantaradev" target="_blank">GitHub</a>
         </div>
     </footer>
+    <script>
+        loadfields()
+    </script>
 </body>
 
 </html>
